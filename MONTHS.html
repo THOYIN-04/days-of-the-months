@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>days of the months calculator</h1>
+    <input type="text" id="input" />
+    <button onclick="generate()">generate</button>
+    <div id="result"></div>
+  </body>
+</html>
+<script>
+  function generate() {
+    let key = input.value;
+
+    switch (key.toLowerCase()) {
+      case "january":
+        result.innerHTML = `<p>january has 31 days</p>`;
+        break;
+      case "february":
+        result.innerHTML = `<p>february has 29 days</p>`;
+        break;
+      case "march":
+        result.innerHTML = `<p>march has 31 days</p>`;
+        break;
+      case "april":
+        result.innerHTML = `<p>april has 30 days</p>`;
+        break;
+      case "may":
+        result.innerHTML = `<p>may has 31 days</p>`;
+        break;
+      case "june":
+        result.innerHTML = `<p>june has 30 days</p>`;
+        break;
+      case "july":
+        result.innerHTML = `<p>july has 31 days</p>`;
+        break;
+      case "august":
+        result.innerHTML = `<p>august has 31 days</p>`;
+        break;
+      case "september":
+        result.innerHTML = `<p>september has 30 days</p>`;
+        break;
+      case "october":
+        result.innerHTML = `<p>october has 31 days</p>`;
+        break;
+      case "november":
+        result.innerHTML = `<p>november has 30 days</p>`;
+        break;
+      case "december":
+        result.innerHTML = `<p>december has 31 days</p>`;
+        break;
+
+      default:
+        result.innerHTML = `<p>${key} is not a valid month</p>`;
+        break;
+    }
+  }
+</script>
